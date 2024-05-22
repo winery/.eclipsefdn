@@ -16,8 +16,6 @@ orgs.newOrg('winery') {
       archived: true,
       default_branch: "master",
       description: "Converter for transforming a BPMN4TOSCA management process to a TOSCA BPEL management process",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -41,8 +39,6 @@ orgs.newOrg('winery') {
       archived: true,
       default_branch: "master",
       description: "Modeler for TOSCA management plans using BPMN4TOSCA",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -197,8 +193,6 @@ orgs.newOrg('winery') {
     orgs.newRepo('winery-topologymodeler') {
       archived: true,
       default_branch: "master",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
