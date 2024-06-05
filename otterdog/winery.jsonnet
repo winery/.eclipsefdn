@@ -110,6 +110,7 @@ orgs.newOrg('winery') {
     orgs.newRepo('test-repository-yaml') {
       allow_merge_commit: true,
       allow_update_branch: false,
+      code_scanning_default_setup_enabled: true,
       default_branch: "master",
       delete_branch_on_merge: false,
       description: "Repository TOSCA YAML",
@@ -132,6 +133,14 @@ orgs.newOrg('winery') {
     orgs.newRepo('winery') {
       allow_merge_commit: true,
       allow_update_branch: false,
+      code_scanning_default_languages+: [
+        "javascript",
+        "javascript-typescript",
+        "python",
+        "ruby",
+        "typescript"
+      ],
+      code_scanning_default_setup_enabled: true,
       delete_branch_on_merge: false,
       dependabot_security_updates_enabled: true,
       description: "Eclipse Winery project",
