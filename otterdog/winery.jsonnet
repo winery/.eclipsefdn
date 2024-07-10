@@ -147,7 +147,7 @@ orgs.newOrg('winery') {
       gh_pages_build_type: "legacy",
       gh_pages_source_branch: "main",
       gh_pages_source_path: "/docs",
-      homepage: "http://eclipse.github.io/winery/",
+      homepage: "http://winery.github.io/winery/",
       private_vulnerability_reporting_enabled: true,
       topics+: [
         "tosca"
