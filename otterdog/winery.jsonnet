@@ -116,11 +116,6 @@ orgs.newOrg('winery') {
       environments: [
         orgs.newEnvironment('github-pages'),
       ],
-      branch_protection_rules: [
-        orgs.newBranchProtectionRule("main") {
-          required_approving_review_count: 1,
-        },
-      ],
     },
     orgs.newRepo('winery-topologymodeler') {
       archived: true,
