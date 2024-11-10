@@ -20,20 +20,6 @@ orgs.newOrg('winery') {
       workflows+: {
         default_workflow_permissions: "write",
       },
-      webhooks: [
-        orgs.newRepoWebhook('https://notify.travis-ci.org') {
-          events+: [
-            "create",
-            "delete",
-            "issue_comment",
-            "member",
-            "public",
-            "pull_request",
-            "push",
-            "repository"
-          ],
-        },
-      ],
     },
     orgs.newRepo('BPMN4TOSCAModeler') {
       archived: true,
@@ -43,17 +29,6 @@ orgs.newOrg('winery') {
       workflows+: {
         default_workflow_permissions: "write",
       },
-      webhooks: [
-        orgs.newRepoWebhook('https://notify.travis-ci.org') {
-          events+: [
-            "issue_comment",
-            "member",
-            "public",
-            "pull_request",
-            "push"
-          ],
-        },
-      ],
     },
     orgs.newRepo('mulit-repo-test') {
       allow_merge_commit: true,
@@ -94,15 +69,6 @@ orgs.newOrg('winery') {
       workflows+: {
         default_workflow_permissions: "write",
       },
-      webhooks: [
-        orgs.newRepoWebhook('https://hooks.waffle.io/api/projects/5971d136c448d20164b5cc1f/sources/5b3b086329ba5f0025c241de/receive') {
-          content_type: "json",
-          events+: [
-            "*"
-          ],
-          secret: "********",
-        },
-      ],
       environments: [
         orgs.newEnvironment('github-pages'),
       ],
@@ -120,15 +86,6 @@ orgs.newOrg('winery') {
       workflows+: {
         default_workflow_permissions: "write",
       },
-      webhooks: [
-        orgs.newRepoWebhook('https://hooks.waffle.io/api/projects/5971d136c448d20164b5cc1f/sources/5b3b086429ba5f0025c241df/receive') {
-          content_type: "json",
-          events+: [
-            "*"
-          ],
-          secret: "********",
-        },
-      ],
     },
     orgs.newRepo('winery') {
       allow_merge_commit: true,
@@ -156,45 +113,6 @@ orgs.newOrg('winery') {
       workflows+: {
         default_workflow_permissions: "write",
       },
-      webhooks: [
-        orgs.newRepoWebhook('https://hooks.slack.com/services/T4JHVU03E/B6AP80G7P/*') {
-          content_type: "json",
-          events+: [
-            "commit_comment",
-            "create",
-            "delete",
-            "deployment_status",
-            "fork",
-            "issue_comment",
-            "issues",
-            "pull_request",
-            "pull_request_review",
-            "pull_request_review_comment",
-            "push",
-            "release"
-          ],
-        },
-        orgs.newRepoWebhook('https://hooks.waffle.io/api/projects/5b290e6af15e1800296d8ed2/sources/5971d1585bbf2e00c4a315fd/receive') {
-          content_type: "json",
-          events+: [
-            "*"
-          ],
-          secret: "********",
-        },
-        orgs.newRepoWebhook('https://notify.travis-ci.org') {
-          active: false,
-          events+: [
-            "create",
-            "delete",
-            "issue_comment",
-            "member",
-            "public",
-            "pull_request",
-            "push",
-            "repository"
-          ],
-        },
-      ],
       environments: [
         orgs.newEnvironment('github-pages'),
       ],
@@ -211,20 +129,6 @@ orgs.newOrg('winery') {
       workflows+: {
         default_workflow_permissions: "write",
       },
-      webhooks: [
-        orgs.newRepoWebhook('https://notify.travis-ci.org') {
-          events+: [
-            "create",
-            "delete",
-            "issue_comment",
-            "member",
-            "public",
-            "pull_request",
-            "push",
-            "repository"
-          ],
-        },
-      ],
     },
   ],
 }
