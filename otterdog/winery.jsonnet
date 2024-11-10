@@ -2,7 +2,7 @@ local orgs = import 'vendor/otterdog-defaults/otterdog-defaults.libsonnet';
 
 orgs.newOrg('winery') {
   settings+: {
-    blog: "http://eclipse.org/winery/",
+    blog: "https://eclipse.org/winery/",
     description: "Winery is a trademark of the Eclipse Foundation. Additional Winery repositories not (yet) covered by the Eclipse Foundation IP policy.",
     email: "webmaster@eclipse-foundation.org",
     name: "Eclipse Winery",
@@ -147,7 +147,7 @@ orgs.newOrg('winery') {
       gh_pages_build_type: "legacy",
       gh_pages_source_branch: "main",
       gh_pages_source_path: "/docs",
-      homepage: "http://winery.github.io/winery/",
+      homepage: "https://winery.github.io/winery/",
       private_vulnerability_reporting_enabled: true,
       topics+: [
         "tosca"
