@@ -1,6 +1,6 @@
 local orgs = import 'vendor/otterdog-defaults/otterdog-defaults.libsonnet';
 
-orgs.newOrg('winery') {
+orgs.newOrg('automotive.winery', 'winery') {
   settings+: {
     blog: "https://eclipse.org/winery/",
     description: "Winery is a trademark of the Eclipse Foundation. Additional Winery repositories not (yet) covered by the Eclipse Foundation IP policy.",
