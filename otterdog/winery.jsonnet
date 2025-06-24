@@ -91,6 +91,7 @@ orgs.newOrg('automotive.winery', 'winery') {
       allow_merge_commit: true,
       allow_update_branch: false,
       code_scanning_default_languages+: [
+        "actions",
         "javascript-typescript",
         "python",
         "ruby",
